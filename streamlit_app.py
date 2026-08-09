@@ -3,7 +3,7 @@ import uuid
 import requests
 import streamlit as st
 
-API_URL = "http://localhost:8000/api/interview"
+API_URL = st.secrets["API_URL"]
 
 st.set_page_config(page_title="AI Technical Interview", page_icon="🤖", layout="centered")
 st.title(" AI Technical Interview Agent")
